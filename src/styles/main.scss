@@ -1,0 +1,50 @@
+@use 'hero';
+@use 'event';
+@use 'componentes/infos_bar';
+@use 'componentes/buttons';
+@use 'componentes/variables';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+
+.text {
+    background-color: variables.$fade4;
+    padding-bottom: 50px;
+    
+    &__under {
+        text-align: center;
+        font-family: "Matemasie", sans-serif;
+        font-size: 48px;
+    }
+}
+
+.footer {
+    background-color: variables.$fade4;
+    padding: 10px;
+
+    &__text {
+        text-align: center;
+        font-style: italic;
+    }
+}
